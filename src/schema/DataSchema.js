@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 const postSchema = new mongoose.Schema({
     
-    image: {
+    myFile: {
         type: String,
         required: true,
     },

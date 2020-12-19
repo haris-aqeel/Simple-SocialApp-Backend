@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const multer = require("multer");
 require('./database/connection');
 const port = process.env.PORT || 3000;
 const routerAuth = require('./Auth/auth');
