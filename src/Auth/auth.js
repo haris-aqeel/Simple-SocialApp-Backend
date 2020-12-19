@@ -43,12 +43,7 @@ routerAuth.get('/userData', async(req, res)=> {
   try{
 
     const allUserData = await Authorization.find();
-    const {_id, name, email} = allUserData;
-    res.status(200).send({
-      _id,
-      name, 
-      email
-    });
+    res.status(200).send(allUserData);
 
 
   }catch(err){
